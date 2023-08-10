@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 const OrderHistory = ({}) => {
   return (
     <View style={styles.container}>
-      <Text>This is another screen</Text>
+      <Text>This is api screen</Text>
       
     </View>
   );

@@ -1,10 +1,13 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/FontAwesome'; // You can use any icon library
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import { Bell, Home, Power, RefreshCcw, Search, Settings, Target, User } from "react-native-feather";
 import AnotherScreen from '../screens/AnotherScreen';
-import NewOrder from '../screens/NewOrder';
+import NewOrder from '../screens/UsingFetch';
 import OrderHistory from '../screens/OrderHistory';
 import Stock from '../screens/Stock';
+import UserList from '../screens/UserList';
+import DashBoard from '../screens/DashBoard';
 
 
 const Tab = createBottomTabNavigator();
@@ -12,26 +15,27 @@ const Tab = createBottomTabNavigator();
 const BottomNavigation = () => {
   return (
     <Tab.Navigator
-      tabBarOptions={{
-        activeTintColor: 'blue', // Color of the active tab label and icon
+      screenOptions={{
+        activeTintColor: 'gray', // Color of the active tab label and icon
         inactiveTintColor: 'gray', // Color of the inactive tab label and icon
+        headerShown: false,
       }}
     >
       <Tab.Screen
-        name="Home"
-        component={AnotherScreen}
+        name="DashBoard"
+        component={DashBoard}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Icon name="home" size={size} color={color} />
+            <Home stroke="blue" width={30} height={30}/>
           ),
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="UserList"
         component={AnotherScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Icon name="user" size={size} color={color} />
+            <User stroke="blue" width={30} height={30}/>
           ),
         }}
       />
@@ -40,7 +44,7 @@ const BottomNavigation = () => {
         component={OrderHistory}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Icon name="search" size={size} color={color} />
+            <Search stroke="blue" width={30} height={30}/>
           ),
         }}
       />
@@ -49,7 +53,7 @@ const BottomNavigation = () => {
         component={NewOrder}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Icon name="bell" size={size} color={color} />
+            <Bell stroke="blue" width={30} height={30}/>
           ),
         }}
       />
@@ -58,7 +62,7 @@ const BottomNavigation = () => {
         component={Stock}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Icon name="cog" size={size} color={color} />
+            <Settings stroke="blue" width={30} height={30}/>
           ),
         }}
       />

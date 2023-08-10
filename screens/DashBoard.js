@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Button, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import StatusBar from '../components/StatusBar';
 import Grid from '../components/Grid';
-import { Calendar, CheckCircle, Clock, CornerLeftUp, CornerUpLeft, FileText, Power, RefreshCcw, RotateCcw, ShoppingCart, Tag, Target } from "react-native-feather";
+import { Calendar, CheckCircle, Clock, CornerLeftUp, CornerUpLeft, FileText, Power, RefreshCcw, RotateCcw, ShoppingCart, Tag, Target, User } from "react-native-feather";
 import Icon from 'react-native-vector-icons/Fontisto';
 import ActiveOrder from '../components/ActiveOrder';
 import { useNavigation } from '@react-navigation/native';
@@ -15,9 +15,9 @@ import BottomNavigation from '../components/BottomNavigation';
 const DashBoard = ({ navigation }) => {
 
   const gridData = [
-    { icon: <ShoppingCart stroke="blue" width={30} height={30} />, children: 'New Order' ,screen:'NewOrder'},
-    { icon: <CornerUpLeft stroke="blue" width={30} height={30} />, children: 'Sales Return', screen:'OrderHistory'},
-    { icon: <Calendar stroke="blue" width={30} height={30} />, children: 'Stock/Inventory',screen:'Stock' },
+    { icon: <User stroke="blue" width={30} height={30} />, children: 'User List' ,screen:'UserList'},
+    { icon: <CornerUpLeft stroke="blue" width={30} height={30} />, children: 'Using Fetch', screen:'UsingFetch'},
+    { icon: <Calendar stroke="blue" width={30} height={30} />, children: 'Stock/Inventory',screen:'AnotherScreen' },
 
     { icon: <Clock stroke="blue" width={30} height={30} />, children: 'Saved Orders' ,screen:'NewOrder'},
     { icon: <CheckCircle stroke="blue" width={30} height={30} />, children: 'Order Logs' ,screen:'NewOrder'},
@@ -43,7 +43,7 @@ const DashBoard = ({ navigation }) => {
           <ActiveOrder navigation={navigation}/>
         </View>
       </View>
-      <BottomNavigation />
+      
     </SafeAreaView>
   );
 };

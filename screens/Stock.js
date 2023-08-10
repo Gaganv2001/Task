@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 const Stock = ({}) => {
   return (
     <View style={styles.container}>
-      <Text>This is another screen</Text>
+      <Text>This is screen</Text>
       
     </View>
   );
