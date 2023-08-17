@@ -13,6 +13,10 @@ import Stock from './screens/Stock';
 import UserList from './screens/UserList';
 import UsingFetch from './screens/UsingFetch';
 import BottomNavigation from './components/BottomNavigation';
+import Move from './screens/Move';
+import Fade from './screens/Fade';
+import CreateAndShare from './screens/CreateAndShare';
+import Pdf from './screens/Pdf';
 
 
 const Stack = createStackNavigator();
@@ -26,7 +30,12 @@ const App = () => {
       <Stack.Screen name="AnotherScreen" component={AnotherScreen} />
       <Stack.Screen name="UsingFetch" component={UsingFetch} />
       <Stack.Screen name="UserList" component={UserList} />
-      <Stack.Screen name="Stock" component={Stock} options={{ headerShown: false }}/>
+      <Stack.Screen name="Fade" component={Fade} />
+      <Stack.Screen name="Move" component={Move} />
+      <Stack.Screen name="Stock" component={Stock} />
+      <Stack.Screen name="CreateAndShare" component={CreateAndShare} />
+      <Stack.Screen name="Pdf" component={Pdf} />
+      <Stack.Screen name="NewScreen" component={NewScreen} options={{ headerShown: false }}/>
       </Stack.Navigator>    
     </NavigationContainer>
   );

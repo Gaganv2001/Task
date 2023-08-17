@@ -7,7 +7,7 @@ import { Calendar, CheckCircle, Clock, CornerLeftUp, CornerUpLeft, FileText, Pow
 import Icon from 'react-native-vector-icons/Fontisto';
 import ActiveOrder from '../components/ActiveOrder';
 import { useNavigation } from '@react-navigation/native';
-import BottomNavigation from '../components/BottomNavigation';
+
 
 
 
@@ -15,17 +15,17 @@ import BottomNavigation from '../components/BottomNavigation';
 const DashBoard = ({ navigation }) => {
 
   const gridData = [
-    { icon: <User stroke="blue" width={30} height={30} />, children: 'User List' ,screen:'UserList'},
-    { icon: <CornerUpLeft stroke="blue" width={30} height={30} />, children: 'Using Fetch', screen:'UsingFetch'},
-    { icon: <Calendar stroke="blue" width={30} height={30} />, children: 'Stock/Inventory',screen:'AnotherScreen' },
+    { icon: <User stroke="blue" width={30} height={30} />, children: 'QR Scanner' ,screen:'NewScreen'},
+    { icon: <CornerUpLeft stroke="blue" width={30} height={30} />, children: 'Move', screen:'Move'},
+    { icon: <Calendar stroke="blue" width={30} height={30} />, children: 'Fade',screen:'Fade' },
 
-    { icon: <Clock stroke="blue" width={30} height={30} />, children: 'Saved Orders' ,screen:'NewOrder'},
-    { icon: <CheckCircle stroke="blue" width={30} height={30} />, children: 'Order Logs' ,screen:'NewOrder'},
-    { icon: <RotateCcw stroke="blue" width={30} height={30} />, children: 'SKU History' ,screen:'NewOrder'},
+    { icon: <Clock stroke="blue" width={30} height={30} />, children: 'Rotate' ,screen:'Stock'},
+    { icon: <CheckCircle stroke="blue" width={30} height={30} />, children: 'Order Logs' ,screen:'NewScreen'},
+    { icon: <RotateCcw stroke="blue" width={30} height={30} />, children: 'SKU History' ,screen:'NewScreen'},
 
-    { icon: <FileText stroke="blue" width={30} height={30} />, children: 'Special Orders' ,screen:'NewOrder'},
-    { icon: <FileText stroke="blue" width={30} height={30} />, children: 'Bundled Orders' ,screen:'NewOrder'},
-    { icon: <Tag stroke="blue" width={30} height={30} />, children: 'Promotion/Offer' ,screen:'NewOrder'},
+    { icon: <FileText stroke="blue" width={30} height={30} />, children: 'Special Orders' ,screen:'NewScreen'},
+    { icon: <FileText stroke="blue" width={30} height={30} />, children: 'HTML-PDF' ,screen:'Pdf'},
+    { icon: <Tag stroke="blue" width={30} height={30} />, children: 'PDF' ,screen:'CreateAndShare'},
     // Add more grid items as needed...
   ];
 

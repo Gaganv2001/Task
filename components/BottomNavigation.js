@@ -41,7 +41,7 @@ const BottomNavigation = () => {
       />
       <Tab.Screen
         name="Search"
-        component={OrderHistory}
+        component={Stock}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Search stroke="blue" width={30} height={30}/>
@@ -50,7 +50,7 @@ const BottomNavigation = () => {
       />
       <Tab.Screen
         name="Notifications"
-        component={NewOrder}
+        component={OrderHistory}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Bell stroke="blue" width={30} height={30}/>
@@ -59,7 +59,7 @@ const BottomNavigation = () => {
       />
       <Tab.Screen
         name="Settings"
-        component={Stock}
+        component={OrderHistory}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Settings stroke="blue" width={30} height={30}/>
