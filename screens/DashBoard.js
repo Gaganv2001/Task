@@ -24,7 +24,7 @@ const DashBoard = ({ navigation }) => {
     { icon: <RotateCcw stroke="blue" width={30} height={30} />, children: 'SKU History' ,screen:'NewScreen'},
 
     { icon: <FileText stroke="blue" width={30} height={30} />, children: 'Special Orders' ,screen:'NewScreen'},
-    { icon: <FileText stroke="blue" width={30} height={30} />, children: 'HTML-PDF' ,screen:'Pdf'},
+    { icon: <FileText stroke="blue" width={30} height={30} />, children: 'Theme' ,screen:'Theme'},
     { icon: <Tag stroke="blue" width={30} height={30} />, children: 'PDF' ,screen:'CreateAndShare'},
     // Add more grid items as needed...
   ];

@@ -16,7 +16,8 @@ import BottomNavigation from './components/BottomNavigation';
 import Move from './screens/Move';
 import Fade from './screens/Fade';
 import CreateAndShare from './screens/CreateAndShare';
-import Pdf from './screens/Pdf';
+import Pdf from './screens/Theme';
+import Theme from './screens/Theme';
 
 
 const Stack = createStackNavigator();
@@ -34,7 +35,7 @@ const App = () => {
       <Stack.Screen name="Move" component={Move} />
       <Stack.Screen name="Stock" component={Stock} />
       <Stack.Screen name="CreateAndShare" component={CreateAndShare} />
-      <Stack.Screen name="Pdf" component={Pdf} />
+      <Stack.Screen name="Theme" component={Theme} />
       <Stack.Screen name="NewScreen" component={NewScreen} options={{ headerShown: false }}/>
       </Stack.Navigator>    
     </NavigationContainer>
